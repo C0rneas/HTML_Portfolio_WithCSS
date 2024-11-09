@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Cordon's Résumé</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to John Cordon's Résumé</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h2>About Me</h2>
+      <img
+        src="Profile.jpg"
+        alt="John Cordon Profile"
+        width="300"
+        height="300"
+      />
+      <p>
+        [I am a student in The Technological University of the Philippines with
+        the course Information Systems. I am enthusiastic and willing to learn
+        about technology and coding.]
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Project 1: [Math Tutor V2]</h3>
+        <p>A C program that randomly generates math questions</p>
+        <p>Technologies used: C, Codeblocks</p>
+        <p>
+          <a href="https://github.com/C0rneas/Project-1">GitHub Repository</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Project 2: [Snake and Ladders in C]</h3>
+        <p>Basic snake and ladders game in C</p>
+        <p>Technologies used: C, Codeblocks</p>
+        <p>
+          <a href="https://github.com/C0rneas/Project_2">GitHub Repository</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Project 3: [ATM Simulation in C++]</h3>
+        <p>
+          A C++ program that simulates an ATM using a flashdrive as the card
+        </p>
+        <p>Technologies used: C++, Codeblocks</p>
+        <p>
+          <a href="https://github.com/C0rneas/Project_3">GitHub Repository</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <h3>Programming Languages</h3>
+      <ul>
+        <li><strong>Beginner:</strong> C++, C, HTML, Java</li>
+      </ul>
+
+      <h3>Libraries & Frameworks</h3>
+      <ul>
+        <li>N/A</li>
+      </ul>
+
+      <h3>Tools</h3>
+      <ul>
+        <li>
+          <strong>Beginner:</strong> Github, Visual Studio Code, Codeblocks
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Cellphone Number: 09604616636</p>
+      <p>Email: Johncordon7@gmail.com</p>
+      <p>Facebook: John Cordon</p>
+    </section>
+
+    <footer>
+      <p>&copy; [2024] [John Cristopher V. Cordon]. All rights reserved.</p>
+      <p><a href="https://github.com/C0rneas">GitHub</a> |</p>
+    </footer>
+  </body>
+</html>
