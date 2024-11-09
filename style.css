@@ -1,0 +1,164 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.7;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #283593;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: #ffcc80;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #ff9800;
+  }
+  
+  /* Section styling */
+  section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  section#home img {
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  section p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  /* Article styling for Projects */
+  article {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+  
+  article h3 {
+    color: #555;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  /* Links styling */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #ff9800;
+  }
+  
+  /* Skills and Hobbies section styling */
+  section#skills ul, section#hobbies ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section#skills ul li, section#hobbies ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Contact section styling */
+  section#contact p {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  /* Facebook and GitHub icons in Contact section */
+  #contact .facebook-icon {
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  #contact .facebook-icon:hover {
+    color: #4267B2; /* Facebook blue color */
+  }
+  
+  #contact .github-icon {
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  #contact .github-icon:hover {
+    color: #6e5494; /* GitHub purple color */
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #283593;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #ffcc80;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ff9800;
+  }
+  
