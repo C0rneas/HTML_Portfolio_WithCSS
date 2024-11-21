@@ -3,38 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>John Cordon's Résumé</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to John Cordon's Résumé</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <h1 id="welcomeMessage"></h1>
     </header>
-
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <section id="home">
       <h2>About Me</h2>
-      <img
-        src="Profile.jpg"
-        alt="John Cordon Profile"
-        width="300"
-        height="300"
-      />
+      <img src="Profile.jpg" alt="John Cordon Profile" width="300" height="300" />
       <p>
-        [I am a student in The Technological University of the Philippines with
-        the course Information Systems. I am enthusiastic and willing to learn
-        about technology and coding.]
+        I am a student in The Technological University of the Philippines with the
+        course Information Systems. I am enthusiastic and willing to learn about
+        technology and coding.
       </p>
     </section>
+
+  </body>
 
     <section id="projects">
       <h2>Projects</h2>
@@ -70,24 +69,49 @@
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2>Skills Proficiency</h2>
+    
+      <div class="skill">
+        <h3>C++</h3>
+        <div class="skill-bar" data-level="30%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="skill-bar" data-level="50%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>Java</h3>
+        <div class="skill-bar" data-level="30%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
 
-      <h3>Programming Languages</h3>
-      <ul>
-        <li><strong>Beginner:</strong> C++, C, HTML, Java</li>
-      </ul>
+      <div class="skill">
+        <h3>C</h3>
+        <div class="skill-bar" data-level="20%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
 
-      <h3>Libraries & Frameworks</h3>
-      <ul>
-        <li>N/A</li>
-      </ul>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="skill-bar" data-level="40%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
 
-      <h3>Tools</h3>
-      <ul>
-        <li>
-          <strong>Beginner:</strong> Github, Visual Studio Code, Codeblocks
-        </li>
-      </ul>
+      <div class="skill">
+        <h3>Javascript</h3>
+        <div class="skill-bar" data-level="30%">
+          <div class="skill-level"></div>
+        </div>
+      </div>
     </section>
 
     <section id="hobbies">
@@ -119,9 +143,13 @@
         </a>
       </p>
     </section>
+    
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
 
     <footer>
       <p>&copy; 2024 John Cristopher V. Cordon. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script> 
   </body>
 </html>

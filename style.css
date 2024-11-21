@@ -11,29 +11,51 @@
     color: #333;
     line-height: 1.7;
   }
-  
-  /* Header styling */
-  header {
-    background-color: #283593;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+
+/* Initial state for sections (hidden and off-screen) */
+section {
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly lower for smoother animation */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+
+/* When sections become visible */
+.section-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+ /* Header styling for sticky navbar */
+ header {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #283593;
+  color: #ffcc80;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for separation */
+}
   
   header h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
   }
-  
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #283593;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
   /* Navigation styling */
   nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 0.5rem 0;
+    margin: 0;
   }
   
   nav ul li a {
@@ -45,7 +67,6 @@
   nav ul li a:hover {
     color: #ff9800;
   }
-  
   /* Section styling */
   section {
     max-width: 800px;
@@ -62,6 +83,25 @@
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Arial', sans-serif;
+  }
+
+  #home {
+    margin-top: 5rem; /* Moves the About Me section down */
+  }
+
+  #welcomeMessage {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc80;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   
   section#home img {
@@ -116,6 +156,37 @@
   section#skills ul li, section#hobbies ul li {
     margin: 0.5rem 0;
   }
+
+/* Skill bar container */
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Skill bar styling */
+.skill-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-level {
+  width: 0%;  /* Initial width set to 0% */
+  height: 100%;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #283593; /* Change to your preferred color */
+  transition: width 2s ease-out; /* Smooth animation */
+}
   
   /* Contact section styling */
   section#contact p {
@@ -162,3 +233,22 @@
     color: #ff9800;
   }
   
+  /* Scroll to Top Button Styling */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #283593; /* Adjust the background color */
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #ff9800; /* Change color on hover */
+}
